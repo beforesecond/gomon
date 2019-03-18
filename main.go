@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/acoshift/goreload/internal"
+	"github.com/beforesecond/goreload/internal"
 	shellwords "github.com/mattn/go-shellwords"
 	"gopkg.in/urfave/cli.v1"
 
