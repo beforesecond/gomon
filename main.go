@@ -18,7 +18,7 @@ import (
 
 var (
 	startTime  = time.Now()
-	logger     = log.New(os.Stdout, "[goreload] ", 0)
+	logger     = log.New(os.Stdout, "[gomon] ", 0)
 	colorGreen = string([]byte{27, 91, 57, 55, 59, 51, 50, 59, 49, 109})
 	colorRed   = string([]byte{27, 91, 57, 55, 59, 51, 49, 59, 49, 109})
 	colorReset = string([]byte{27, 91, 48, 109})
@@ -26,13 +26,13 @@ var (
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "goreload"
+	app.Name = "gomon"
 	app.Usage = "A live reload utility for Go web applications."
 	app.Action = mainAction
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "bin,b",
-			Value: ".goreload",
+			Value: ".gomon",
 			Usage: "name of generated binary file",
 		},
 		cli.StringFlag{
@@ -61,14 +61,14 @@ func main() {
 		cli.StringFlag{
 			Name:  "logPrefix",
 			Usage: "Log prefix",
-			Value: "goreload",
+			Value: "gomon",
 		},
 	}
 	app.Commands = []cli.Command{
 		{
 			Name:      "run",
 			ShortName: "r",
-			Usage:     "Run the goreload",
+			Usage:     "Run the gomon",
 			Action:    mainAction,
 		},
 	}
