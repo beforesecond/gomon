@@ -1,9 +1,9 @@
-# Goreload
+# Gomon
 
-`goreload` forks from codegangsta/gin and remove unused features.
+`gomon` forks from codegangsta/gin,acoshift and remove unused features.
 
-Just run `goreload` in your app directory.
-`goreload` will automatically recompile your code when it
+Just run `gomon` in your app directory.
+`gomon` will automatically recompile your code when it
 detects a change.
 
 ## Installation
