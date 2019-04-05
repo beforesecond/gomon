@@ -15,7 +15,7 @@ go get -u github.com/beforesecond/gomon
 ## Basic usage
 
 ```shell
-goreload main.go
+gomon main.go
 ```
 
 Options
