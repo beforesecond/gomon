@@ -9,7 +9,7 @@ detects a change.
 ## Installation
 
 ```shell
-go get -u github.com/beforesecond/goreload
+go get -u github.com/beforesecond/gomon
 ```
 
 ## Basic usage
